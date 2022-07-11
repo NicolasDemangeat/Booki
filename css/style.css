@@ -1,3 +1,4 @@
+/* configuration box-sizing et de la police */
 * { 
     box-sizing: content-box;
     font-family: 'Raleway', sans-serif;
@@ -5,12 +6,19 @@
    /* box-sizing est appliqué à tous les éléments */
 }
 
+/* marge et padding de la page sauf le footer */
+#bloc_de_page {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1400px;
+}
+
+/* en-tête du site, logo + menu */
 header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -18,13 +26,6 @@ nav {
     width: 45%;
     height: 100px;
 }
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .item-menu {
     width: 30%;
     height: 98%;
@@ -34,6 +35,61 @@ a {
 }
 
 .item-menu:hover {
-    color: #0065FC;
     border-top: solid 3px #0065FC;
+}
+a:hover {
+    color: #0065FC;
+}
+
+/* retraits du style des liens */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Titre et sous titre */
+h1 {
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 0%;
+}
+
+#sous_titre {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* barre de recherche */
+form {
+    display: flex;
+    height: 45px;
+}
+.submit {
+    color: white;
+    background-color: #0065FC;
+    font-weight: 600;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+#recherche {
+    border: 1px solid #d9d9d9;
+    font-weight: 700;
+}
+
+/* icone gps */
+#gps {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #d9d9d9;
+    border-radius: 12px 0 0 12px;    
+}
+
+/* section filtres */
+#section_filtres {
+    border: 1px solid black;
+    display: flex;
 }

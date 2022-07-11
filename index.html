@@ -17,25 +17,49 @@
     <title>Booki</title>
 </head>
 <body>
-    <header>
-        <img src="assets/logo/Booki@3x.png" alt="Logo du site Booki">
-        <nav>
-            <div class="item-menu"><a href="#hebergements">Hébergements</a></div>
-            <div class="item-menu"><a href="#activites">Activités</a></div>
-        </nav>
-    </header>
-    <div>
-        <form action="#" method="post">
-            Trouvez votre hébergement pour des vacances de rêve
+    <div id="bloc_de_page">
+
+        <header>
+            <img src="assets/logo/Booki@3x.png" alt="Logo du site Booki">
+            <nav>
+                <div class="item-menu"><a href="#hebergements">Hébergements</a></div>
+                <div class="item-menu"><a href="#activites">Activités</a></div>
+            </nav>
+        </header>
+
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p id="sous_titre">En plein centre ville ou en pleine nature</p>
+
+        <form>
+            <i id="gps" class="fa-solid fa-location-dot"></i>
+            <input type="search" id="recherche" name="search" placeholder="Marseille, France">
+            <input type="submit" class="submit" value="Rechercher" />
         </form>
-    </div>
-    <div>
-        <div>
-            <section id="hebergements">Hébergements à Marseille</section>
-            <aside id="populaires">Les plus populaires</aside>
+
+        <section id="section_filtres">
+            <h2>Filtres</h2>
+            <a href="#" id="btn-economique">Economique</a>
+            <a href="#" id="btn-familial">familial</a>
+            <a href="#" id="btn-romantique">Romantique</a>
+            <a href="#" id="btn-animaux">Animaux</a>
+        </section>
+
+        <div class="infos">
+            <p class="texte_infos">
+            <span id="logo_infos"><i class="fa-solid fa-circle-info"></i></span>
+            Plus de 500 logements sont disponibles dans cette ville
+            </p>
         </div>
-        <section id="activites">Activités à Marseille</section>
+    
+        <div>
+            <div>
+                <section id="hebergements">Hébergements à Marseille</section>
+                <aside id="populaires">Les plus populaires</aside>
+            </div>
+            <section id="activites">Activités à Marseille</section>
+        </div>
     </div>
+    
     <footer>
 
     </footer>
