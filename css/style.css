@@ -37,7 +37,7 @@ nav {
 .item-menu:hover {
     border-top: solid 3px #0065FC;
 }
-a:hover {
+.menu_item:hover {
     color: #0065FC;
 }
 
@@ -81,15 +81,38 @@ form {
 
 /* icone gps */
 #gps {
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 1% 1% 1% 1%;
     background-color: #d9d9d9;
     border-radius: 12px 0 0 12px;    
 }
 
 /* section filtres */
 #section_filtres {
+    width: 50%;
+    margin-top: 25px;
     border: 1px solid black;
     display: flex;
+    justify-content: space-between;
+}
+.txt_filtre {
+    font-weight: 600;
+}
+.btn_filtre {
+    display:flex;
+    border-radius: 20px;
+    height: 33px;
+    border: 1px #d9d9d9 solid;
+    align-items: center;
+    width: 100%;
+}
+.btn_filtre:hover {
+    background-color: #DEEBFF;
+}
+.icone_filtre {
+    display: flex;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 9px;
+    color: #0065FC;
+    align-items: center;
 }
