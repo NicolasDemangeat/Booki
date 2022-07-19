@@ -19,7 +19,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
 }
-nav {
+#menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,8 +32,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: solid 3px transparent;
+    color: #0065FC;
 }
-
 .item-menu:hover {
     border-top: solid 3px #0065FC;
 }
@@ -53,7 +54,6 @@ h1 {
     font-size: x-large;
     margin-bottom: 0%;
 }
-
 #sous_titre {
     margin-top: 8px;
     margin-bottom: 20px;
@@ -61,7 +61,7 @@ h1 {
 }
 
 /* barre de recherche */
-form {
+#form_recherche {
     display: flex;
     height: 45px;
 }
@@ -77,42 +77,111 @@ form {
 #recherche {
     border: 1px solid #d9d9d9;
     font-weight: 700;
+    padding-left: 10px;
 }
 
 /* icone gps */
-#gps {
-    padding: 1% 1% 1% 1%;
+#conteneur_gps {
+    display: flex;
+    align-items: center;
+    padding: 18px;
     background-color: #d9d9d9;
-    border-radius: 12px 0 0 12px;    
+    border-radius: 12px 0 0 12px;
+}
+
+/* gestion icone loupe */
+#loupe_search {
+    display: none;
 }
 
 /* section filtres */
 #section_filtres {
-    width: 50%;
+    width: 60%;
     margin-top: 25px;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .txt_filtre {
-    font-weight: 600;
+    font-weight: 700;
+    padding: 9px;
+    position: relative;
+    right: 6px;
+}
+.txt {
+    font-weight: 700;
 }
 .btn_filtre {
     display:flex;
-    border-radius: 20px;
-    height: 33px;
-    border: 1px #d9d9d9 solid;
+    margin: 1%;
+    border-radius: 25px;
+    height: 44px;
+    border: 2px #d9d9d9 solid;
     align-items: center;
     width: 100%;
 }
 .btn_filtre:hover {
     background-color: #DEEBFF;
+    color: #0065FC;
 }
 .icone_filtre {
+    position: relative;
+    right: 8px;
     display: flex;
     background-color: #DEEBFF;
     border-radius: 50%;
-    padding: 9px;
+    padding: 16px;
     color: #0065FC;
     align-items: center;
+}
+#icone_famille {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* sectioin hébergement à marseille */
+#global_marseille {
+    border: solid 1px purple;
+    display: flex;
+    justify-content: space-between;
+}
+#hebergements {
+    border: solid 1px black;
+    width: 65%;
+    background-color: #f2f2f2;
+    border-radius: 22px;
+    height: 700px;
+}
+#log_marseille {
+    border: solid 1px red;
+    display:flex;
+    width: 90%;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2%;  
+    margin-right: 5%;
+    margin-left: 5%;
+}
+div.etoiles>i {
+    color: #0065FC;
+}
+.tuile_hebergement {
+    transition: transform 0.3s;
+    background-color: white;
+    border: solid 1px green;
+    width: 30%;
+    height: 45%;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+.img_tuile {
+    width: 100%; 
+    border-radius: 20px 20px 0 0;
+    height: 60%;
+    object-fit: cover;
+}
+.tuile_hebergement:hover {
+    transform: scale(1.1);
 }

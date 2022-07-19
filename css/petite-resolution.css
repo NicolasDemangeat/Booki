@@ -1,3 +1,4 @@
+/* header en colonne */
 header { 
     display: flex;
     flex-direction: column;
@@ -5,28 +6,76 @@ header {
     align-items: center;
 }
 
-img {
+/* resizing du logo */
+#logo_site {
 	max-width: 25%;
 	height: auto;
 }
 
-nav {
+/* disposition du menu */
+#menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 50px;
 }
-
 .item-menu {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .item-menu:hover {
     color: #0065FC;
     border-bottom: solid 2px #0065FC;
     border-top: 0px;
+}
+
+/* barre de recherche */
+#form_recherche {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+#recherche {
+    width: 50%;
+}
+#loupe_search {
+    display: block;
+    border-radius: 15px;
+    padding: 17px;
+    font-size: large;
+    position: relative;
+    right: 15px;
+    display: flex;
+    align-items: center;
+}
+#btn_search {
+    display: none;
+}
+
+/* section filtre */
+#section_filtres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.btn_filtre {
+    margin-left: 10px;
+}
+#famille {
+    position: relative;
+    left: 195px;
+    bottom: 55px;
+}
+#romantique {
+    position: relative;
+    bottom: 40px;
+}
+#animaux {
+    position: relative;
+    bottom: 30px;
+
 }
