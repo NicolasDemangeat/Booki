@@ -96,10 +96,9 @@ h1 {
 
 /* section filtres */
 #section_filtres {
-    width: 60%;
     margin-top: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -111,15 +110,15 @@ h1 {
 }
 .txt {
     font-weight: 700;
+    margin-right: 25px;
 }
 .btn_filtre {
     display:flex;
-    margin: 1%;
+    margin-right: 45px;
     border-radius: 25px;
     height: 44px;
     border: 2px #d9d9d9 solid;
     align-items: center;
-    width: 100%;
 }
 .btn_filtre:hover {
     background-color: #DEEBFF;
@@ -140,48 +139,54 @@ h1 {
     padding-right: 18px;
 }
 
-/* sectioin hébergement à marseille */
+/* sectioin hébergement à marseille et les plus populaires*/
 #global_marseille {
     border: solid 1px purple;
     display: flex;
     justify-content: space-between;
 }
+/* section hebergement à marseille */
 #hebergements {
-    border: solid 1px black;
     width: 65%;
     background-color: #f2f2f2;
     border-radius: 22px;
     height: 700px;
 }
+/* bloc de tuiles photos */
 #log_marseille {
-    border: solid 1px red;
     display:flex;
     width: 90%;
     height: 600px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2%;  
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 div.etoiles>i {
     color: #0065FC;
 }
+div#log_marseille>a {
+    width: 30%;
+    height: 40%;
+    margin-bottom: 3%;
+}
 .tuile_hebergement {
+    width: 100%;
+    height: 100%;
     transition: transform 0.3s;
     background-color: white;
-    border: solid 1px green;
-    width: 30%;
-    height: 45%;
-    margin-bottom: 3%;
+    border: solid 5px white;
+    border-radius: 22px;
     overflow: hidden;
+    box-shadow: 1px 1px 6px gray;
 }
 .img_tuile {
     width: 100%; 
     border-radius: 20px 20px 0 0;
-    height: 60%;
+    height: 50%;
     object-fit: cover;
 }
 .tuile_hebergement:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
