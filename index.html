@@ -30,10 +30,10 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p id="sous_titre">En plein centre ville ou en pleine nature</p>
 
-        <form id="form_recherche">
+        <form id="form_recherche" method="psot" action="#">
             <div id="conteneur_gps"><i id="gps" class="fa-solid fa-location-dot"></i></div>
             <input type="search" id="recherche" name="search" placeholder="Marseille, France">
-            <input type="submit" class="submit" value="Rechercher" id="btn_search"/>
+            <input type="submit" class="submit" value="Rechercher" id="btn_search">
             <button type="submit" class="submit" id="loupe_search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
@@ -76,9 +76,9 @@
             <div id="global_marseille">
                 <section id="hebergements">
                     <h1>Hébergements à Marseille</h1>
-                    <div id="log_marseille">
-                        <a href="#">
-                            <div class="tuile_hebergement">
+                    <div id="log_marseille">                        
+                        <div class="tuile_hebergement">
+                            <a href="#">
                                 <img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière" class="img_tuile">
                                 <h3 class="info_tuile">Auberge la Cannebière</h3>
                                 <p class="info_tuile">Nuit à partir de 25€</p>
@@ -89,10 +89,10 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_hebergement">
+                            </a>
+                        </div>
+                        <div class="tuile_hebergement">
+                            <a href="#">
                                 <img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="img_tuile">
                                 <h3 class="info_tuile">Hôtel du port</h3>
                                 <p class="info_tuile">Nuit à partir de 52€</p>
@@ -103,10 +103,10 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_hebergement">
+                            </a>
+                        </div>                        
+                        <div class="tuile_hebergement">
+                            <a href="#">
                                 <img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" class="img_tuile">
                                 <h3 class="info_tuile">Hôtel les mouettes</h3>
                                 <p class="info_tuile">Nuit à partir de 76€</p>
@@ -117,10 +117,10 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_hebergement">
+                            </a>
+                        </div>
+                        <div class="tuile_hebergement">
+                            <a href="#">
                                 <img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" class="img_tuile">
                                 <h3 class="info_tuile">Hôtel de la mer</h3>
                                 <p class="info_tuile">Nuit à partir de 46€</p>
@@ -131,10 +131,10 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_hebergement">
+                            </a>
+                        </div>
+                        <div class="tuile_hebergement">
+                            <a href="#">
                                 <img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" class="img_tuile">
                                 <h3 class="info_tuile">Auberge Le Panier</h3>
                                 <p class="info_tuile">Nuit à partir de 23€</p>
@@ -145,10 +145,10 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_hebergement">
+                            </a>
+                        </div>                        
+                        <div class="tuile_hebergement">
+                            <a href="#">
                                 <img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" class="img_tuile">
                                 <h3 class="info_tuile">Hôtel chez Amina</h3>
                                 <p class="info_tuile">Nuit à partir de 96€</p>
@@ -159,8 +159,8 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <p>Afficher Plus</p>
                 </section>
@@ -170,57 +170,61 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div id="liste_populaires">
-                        <a href="#">
-                            <div class="tuile_populaires">
-                                <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                                <div class="encart_populaire">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de 128€</p>
-                                    <div class="etoiles info_tuile">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                        <div class="tuile_populaires">
+                            <a href="#">
+                                <div class="contenu_pop">
+                                    <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="img_pop">
+                                    <div class="encart_pop">
+                                        <h3 class="info_pop">Hôtel Le soleil du matin</h3>
+                                        <p class="info_pop">Nuit à partir de 128€</p>
+                                        <div class="etoiles info_pop">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_populaires">
-                                <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                                <div class="encart_populaire">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de 128€</p>
-                                    <div class="etoiles info_tuile">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="tuile_populaires">
+                            <a href="#">
+                                <div class="contenu_pop">
+                                    <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="img_pop">
+                                    <div class="encart_pop">
+                                        <h3 class="info_pop">Hôtel Le soleil du matin</h3>
+                                        <p class="info_pop">Nuit à partir de 128€</p>
+                                        <div class="etoiles info_pop">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="tuile_populaires">
-                                <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                                <div class="encart_populaire">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de 128€</p>
-                                    <div class="etoiles info_tuile">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                            </a>
+                        </div>
+                        <div class="tuile_populaires">
+                            <a href="#">
+                                <div class="contenu_pop">
+                                    <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="img_pop">
+                                    <div class="encart_pop">
+                                        <h3 class="info_pop">Hôtel Le soleil du matin</h3>
+                                        <p class="info_pop">Nuit à partir de 128€</p>
+                                        <div class="etoiles info_pop">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    
+                            </a>
+                        </div>
+                    </div>                    
                 </aside>
             </div>
             <section id="activites">Activités à Marseille</section>

@@ -1,3 +1,8 @@
+#bloc_de_page {
+    margin: 0;
+    padding: 0;
+}
+
 /* header en colonne */
 header { 
     display: flex;
@@ -32,11 +37,23 @@ header {
     border-top: 0px;
 }
 
+/* titre et sous titre */
+h1 {
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+#sous_titre {
+    margin-left:  5%;
+    margin-bottom: 20px;
+}
+
 /* barre de recherche */
 #form_recherche {
     display: flex;
     justify-content: center;
     height: 50px;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 #recherche {
     width: 50%;
@@ -56,14 +73,16 @@ header {
 }
 
 /* section filtre */
+.txt {
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
 #section_filtres {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-.btn_filtre {
-    margin-left: 10px;
+    margin-left: 5%;
 }
 #link_familial {
     position: relative;
@@ -77,4 +96,75 @@ header {
 #link_animaux {
     position: relative;
     bottom: 30px;
+}
+
+/* zone info */
+.infos {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* zone populaire et hebergement marseille */
+#global_marseille {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#populaires, #hebergements{
+    width: 100%;
+    border-radius: 0%;
+}
+#hebergements{
+    background-color: white;
+}
+#log_marseille {
+    flex-direction: column;
+}
+.tuile_hebergement {
+    width: 100%;
+}
+
+
+#liste_populaires {
+    border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 2%;  
+    margin-right: 3%;
+    margin-left: 3%;
+    height: 100%;
+}
+/* config des tuiles populaires */
+.tuile_populaires {
+    height: 130px;
+}
+.contenu_pop {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.encart_pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p.info_pop {
+    position: relative;
+    bottom: 20px;
+}
+.img_pop {
+    object-fit: cover;
+    width: 40%;
+    border-radius: 22px 0 0 22px;
+}
+h3.info_pop {
+    font-weight: 700;
+    margin-top: 10px;
+}
+.info_pop {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    font-size: large;
 }
