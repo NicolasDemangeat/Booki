@@ -65,17 +65,16 @@ header {
 .btn_filtre {
     margin-left: 10px;
 }
-#famille {
+#link_familial {
     position: relative;
     left: 195px;
     bottom: 55px;
 }
-#romantique {
+#link_romantique {
     position: relative;
     bottom: 40px;
 }
-#animaux {
+#link_animaux {
     position: relative;
     bottom: 30px;
-
 }
