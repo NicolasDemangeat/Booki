@@ -209,7 +209,13 @@ h3.info_tuile {
     display: flex;
     color: #0065FC;
 }
-
+#afficher_plus {
+    font-size: large;
+    font-weight: 700;
+    position: relative;
+    left: 40px;
+    bottom: 5px;
+}
 /* aside populaire */
 #populaires {
     background-color: #F2F2F2;
