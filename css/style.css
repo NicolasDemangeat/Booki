@@ -253,13 +253,15 @@ div#en_tete_populaires>i{
 }
 .contenu_pop {
     display: flex;
-    justify-content: space-between;
     height: 100%;
 }
 .encart_pop {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 60%;
 }
 p.info_pop {
     position: relative;
@@ -273,11 +275,11 @@ p.info_pop {
 h3.info_pop {
     font-weight: 700;
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 .info_pop {
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-right: 10%;
     font-size: large;
 }
 /* effet au survol */

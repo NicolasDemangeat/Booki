@@ -113,6 +113,7 @@ h1 {
     width: 100%;
     border-radius: 0%;
 }
+/* zone hebergement à marseille */
 #hebergements{
     background-color: white;
 }
@@ -122,49 +123,33 @@ h1 {
 .tuile_hebergement {
     width: 100%;
 }
-
-
+/* zone populaires */
+#populaires {
+    height: 640px;
+}
+#en_tete_populaires {
+    display: flex;
+    justify-content: space-between;
+}
+div#en_tete_populaires>i {
+    margin-right: 19px;
+}
 #liste_populaires {
-    border: solid 2px green;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 90%;
-    margin-top: 2%;  
+    margin-top: 2%;
     margin-right: 3%;
     margin-left: 3%;
     height: 100%;
+    padding-bottom: 25px;
 }
 /* config des tuiles populaires */
 .tuile_populaires {
-    height: 130px;
+    height: 150px;
 }
-.contenu_pop {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-}
-.encart_pop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-p.info_pop {
+#barre_etoiles {
     position: relative;
-    bottom: 20px;
-}
-.img_pop {
-    object-fit: cover;
-    width: 40%;
-    border-radius: 22px 0 0 22px;
-}
-h3.info_pop {
-    font-weight: 700;
-    margin-top: 10px;
-}
-.info_pop {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-right: 10%;
-    font-size: large;
+    bottom: 10px;
 }
