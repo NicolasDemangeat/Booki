@@ -1,18 +1,18 @@
-/* configuration box-sizing et de la police */
-* { 
-    box-sizing: content-box;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-   /* box-sizing est appliqué à tous les éléments */
-}
-
 /* marge et padding de la page sauf le footer */
 #bloc_de_page {
     margin: 0 auto;
     padding: 0 2%;
     max-width: 1500px;
 }
-
+body {
+    box-sizing: content-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin: auto;
+}
+img {
+    object-fit: cover;
+}
 /* en-tête du site, logo + menu */
 header {
     display: flex;
@@ -151,9 +151,11 @@ section#section_filtres>a {
 }
 /* section hebergement à marseille */
 #hebergements {
-    width: 65%;
+    width: 66%;
     background-color: #f2f2f2;
     border-radius: 22px;
+    margin-right: 2%;
+    padding-bottom: 2%;
 }
 section#hebergements>h1 {
     position: relative;
@@ -220,7 +222,7 @@ h3.info_tuile {
 #populaires {
     background-color: #F2F2F2;
     border-radius: 22px;
-    width: 32%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,4 +296,99 @@ h3.info_pop {
 }
 .tuile_populaires>a:hover {
     color: #0065FC;
+}
+
+/* section Activités à Marseille */
+#activites {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+#bloc_photos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+/* config de la tuile general */
+.tuile_actv {
+    width: 22%;
+    border-radius: 22px;
+    height: 500px;
+}
+/* config de l'activité tuile verticale */
+.actv_verticale {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px lightgray;
+}
+.img_verticale{
+    height: 540px;
+    object-fit: cover;
+}
+div.actv_verticale>h3 {
+    padding-left: 5%;
+    font-weight: 700;
+}
+/* config de la tuile de deux activités */
+.deux_photos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* config de la plus grande des deux activités */
+.actv_grande {
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px lightgray;
+    height: 50%;
+}
+.img_actv_grande {
+    height: 78%;
+    object-fit: cover;
+}
+div.actv_grande>h3 {
+    padding-left: 5%;
+    font-weight: 700;
+}
+/* config de la plus petite des deux activités */
+.actv_petite {
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px lightgray;
+    height: 40%;
+}
+div.actv_petite>h3 {
+    padding-left: 5%;
+    font-weight: 700;
+}
+.img_actv_petite {
+    object-fit: cover;
+    height: 75%;
+}
+
+/* footer */
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+#marge_footer {
+    border: solid 2px red;
+    max-width: 1500px;
+    width: 100%;
+}
+ul{
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
 }
