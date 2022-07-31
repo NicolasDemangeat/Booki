@@ -124,9 +124,6 @@ h1 {
     width: 100%;
 }
 /* zone populaires */
-#populaires {
-    height: 640px;
-}
 #en_tete_populaires {
     display: flex;
     justify-content: space-between;

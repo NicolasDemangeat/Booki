@@ -1,1 +1,72 @@
- 
+#bloc_de_page {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1500px;
+}
+footer {
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/* header en colonne */
+header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* disposition du menu */
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.item-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-menu:hover {
+    color: #0065FC;
+    border-bottom: solid 2px #0065FC;
+    border-top: 0px;
+}
+/* titre et sous titre */
+h1 {
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+#sous_titre {
+    margin-left:  5%;
+    margin-bottom: 20px;
+}
+/* barre de recherche */
+#form_recherche {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+/* section filtre */
+#section_filtres {
+    flex-wrap: nowrap;
+}
+.texte_infos {
+    margin-top: 5%;
+}
+/* sectioin hébergement à marseille et les plus populaires*/
+#global_marseille {
+    flex-direction: column;
+    justify-content: space-between;
+}
+#populaires {
+    width: 100%;
+}
+#hebergements {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
