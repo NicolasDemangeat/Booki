@@ -160,7 +160,7 @@ section#section_filtres>a {
 section#hebergements>h1 {
     position: relative;
     left: 4%;
-    top: 5px;
+    top: 3%;
 }
 /* bloc de tuiles photos */
 #log_marseille {
@@ -168,7 +168,7 @@ section#hebergements>h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 90%;
-    margin-top: 2%;  
+    margin-top: 5%;  
     margin-right: 3%;
     margin-left: 3%;
 }
@@ -242,12 +242,10 @@ div#en_tete_populaires>i{
 #liste_populaires {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 82%;
-    margin-top: 2%;  
+    margin-top: 6%;  
     margin-right: 3%;
     margin-left: 3%;
-    height: 100%;
 }
 /* config des tuiles populaires */
 .tuile_populaires {
@@ -258,6 +256,7 @@ div#en_tete_populaires>i{
     overflow: hidden;
     box-shadow: 1px 1px 6px gray;
     height: 25%;
+    margin-bottom: 7%;
 }
 .contenu_pop {
     display: flex;
