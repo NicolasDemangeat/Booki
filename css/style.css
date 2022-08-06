@@ -111,7 +111,7 @@ h1 {
     position: relative;
     right: 6px;
 }
-section#section_filtres>a {
+div#section_filtres>a {
     margin-right: 2%;
 }
 .txt {
@@ -157,7 +157,7 @@ section#section_filtres>a {
     margin-right: 2%;
     padding-bottom: 2%;
 }
-section#hebergements>h1 {
+section#hebergements>h2 {
     position: relative;
     left: 4%;
     top: 3%;
