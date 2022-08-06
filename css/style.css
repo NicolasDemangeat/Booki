@@ -306,12 +306,18 @@ h3.info_pop {
 }
 #bloc_photos {
     display: flex;
-    justify-content: space-between;
     margin-top: 1%;
+}
+/* premier bloc de trois photos */
+.bloc {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    margin-right: 4%;
 }
 /* config de la tuile general */
 .tuile_actv {
-    width: 22%;
+    width: 45%;
     border-radius: 22px;
     height: 500px;
 }
@@ -325,6 +331,15 @@ h3.info_pop {
 .tuile_actv>a:hover {
     color: #0065FC;
 }
+.conteneur_actv_petite>a:hover {
+    color: #0065FC;
+}
+.conteneur_actv_grande>a:hover {
+    color: #0065FC;    
+}
+.conteneur_actv_moyenne>a:hover {
+    color: #0065FC;    
+}
 /* config de l'activité tuile verticale */
 .actv_verticale {
     height: 100%;
@@ -334,7 +349,7 @@ h3.info_pop {
     overflow: hidden;
     box-shadow: 0px 1px 5px lightgray;
 }
-.img_verticale{
+.img_verticale {
     height: 540px;
     object-fit: cover;
 }
@@ -350,16 +365,19 @@ div.actv_verticale>h3 {
     justify-content: space-between;
 }
 /* config de la plus grande des deux activités */
-.actv_grande {
-    display: flex;
-    flex-direction: column;
+.conteneur_actv_grande {
+    height: 55%;
     border-radius: 22px;
     overflow: hidden;
     box-shadow: 0px 1px 5px lightgray;
-    height: 50%;
+}
+.actv_grande {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .img_actv_grande {
-    height: 78%;
+    height: 80%;
     object-fit: cover;
 }
 div.actv_grande>h3 {
@@ -367,23 +385,32 @@ div.actv_grande>h3 {
     font-weight: 700;
 }
 /* config de la plus petite des deux activités */
-.actv_petite {
-    display: flex;
-    flex-direction: column;
+.conteneur_actv_petite {
+    height: 35%;
     border-radius: 22px;
     overflow: hidden;
     box-shadow: 0px 1px 5px lightgray;
-    height: 40%;
+}
+.actv_petite {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 div.actv_petite>h3 {
-    padding-left: 5%;
     font-weight: 700;
+    padding-left: 5%;
 }
 .img_actv_petite {
     object-fit: cover;
-    height: 75%;
+    height: 67%;
 }
-
+/* activités taille moyenne */
+.conteneur_actv_moyenne {
+    height: 45%;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px lightgray;    
+}
 /* footer */
 footer {
     background-color: #F2F2F2;
