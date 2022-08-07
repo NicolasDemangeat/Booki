@@ -321,6 +321,10 @@ h3.info_pop {
     border-radius: 22px;
     height: 500px;
 }
+.titre_actv {
+    padding-left: 5%;
+    font-weight: 700;
+}
 /* config effet au survol */
 .effet {
     transition: transform 0.3s;
@@ -350,12 +354,8 @@ h3.info_pop {
     box-shadow: 0px 1px 5px lightgray;
 }
 .img_verticale {
-    height: 540px;
+    height: 100%;
     object-fit: cover;
-}
-div.actv_verticale>h3 {
-    padding-left: 5%;
-    font-weight: 700;
 }
 /* config de la tuile de deux activités */
 .deux_photos {
@@ -380,10 +380,7 @@ div.actv_verticale>h3 {
     height: 80%;
     object-fit: cover;
 }
-div.actv_grande>h3 {
-    padding-left: 5%;
-    font-weight: 700;
-}
+
 /* config de la plus petite des deux activités */
 .conteneur_actv_petite {
     height: 35%;
@@ -396,13 +393,9 @@ div.actv_grande>h3 {
     flex-direction: column;
     height: 100%;
 }
-div.actv_petite>h3 {
-    font-weight: 700;
-    padding-left: 5%;
-}
 .img_actv_petite {
     object-fit: cover;
-    height: 67%;
+    height: 70%;
 }
 /* activités taille moyenne */
 .conteneur_actv_moyenne {
@@ -411,6 +404,17 @@ div.actv_petite>h3 {
     overflow: hidden;
     box-shadow: 0px 1px 5px lightgray;    
 }
+.actv_moyenne {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.img_actv_moyenne {
+    object-fit: cover;
+    height: 76%;
+}
+
 /* footer */
 footer {
     background-color: #F2F2F2;
