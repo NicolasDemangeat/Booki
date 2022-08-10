@@ -105,6 +105,9 @@ h1 {
 }
 
 /* zone populaire et hebergement marseille */
+.titre {
+    margin-left: 7%;
+}
 #global_marseille {
     display: flex;
     flex-direction: column-reverse;
@@ -116,6 +119,7 @@ h1 {
 /* zone hebergement à marseille */
 #hebergements{
     background-color: white;
+    margin-left: 2%;
 }
 #log_marseille {
     flex-direction: column;

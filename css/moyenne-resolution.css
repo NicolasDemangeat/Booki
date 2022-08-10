@@ -89,3 +89,6 @@ h1 {
 #bloc_2 {
     flex-direction: row-reverse;
 }
+.titre__activites {
+    margin-left: 5%;
+}
